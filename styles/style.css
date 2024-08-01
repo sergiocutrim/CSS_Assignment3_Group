@@ -1,14 +1,22 @@
 /*------------------------------------------------------HEADER-------------------------------------------------------------*/
 .header-external-container{
     display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, #392794, #444174);
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to bottom, #5f5f60, #0d0d0e);
     padding: 0;
 }
 
 .logo-container{
-    width: 30%;
+    width: auto;
     padding: 1%;
+    max-width: 10%;
+}
+
+.logo-container img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .logo-header-class{
@@ -20,21 +28,25 @@
 }
 
 .main-name-container{
-    width: 30%;
+    width: auto;
     font-size: 2em;
     color: #fff;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    border-left: none;
+    margin-left: 0;
 }
 
 .header-menu-container{
     width:30%;
+    margin-left: auto;
     display: inline;
 }
 
 .header-menu-container ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .header-menu-container ul li{
