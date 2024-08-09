@@ -118,59 +118,55 @@ html, body {
 /*-----------------------------------------------END OF MEDIA QUERIES FOR THE HEADER---------------------------------------*/
 
 /*---------------------------------------------------------------FOOTER----------------------------------------------------*/
-.footer-logo, .footer-company, .footer-links {
-    padding: 1%;
-    text-align: center; 
-}
-
 .footer-bar {
     display: flex;
-    justify-content: space-around;
-    background-color: #2c3e50  ;
+    justify-content: space-between; 
+    background-color: #2c3e50;
     align-items: center;
-    padding:10px 20px;
-    flex-wrap: wrap;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    flex-wrap: nowrap; 
+    width:100%;
+}
+
+.footer-logo, .footer-company, .footer-links {
+    flex: 1; 
+    text-align: center;
+    padding: 0;
+    border: none; 
     box-sizing: border-box;
 }
 
 .footer-logo {
-    width:30%;
-    padding: 1%;
+    text-align: center;
 }
 
 .footer-logo-rounded {
     border-radius: 50%;
-    width: 35%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border: 2px solid #000;
 }
 
 .footer-company {
-    flex: 1 1 30%;
     color: #fff;
-    text-align: center;
-    padding: 1%;
-    flex-wrap: wrap;
 }
 
 .footer-links {
-    flex: 1 1 20%;
-    flex-wrap: nowrap;
     display: flex;
-    justify-content: flex-end;   
-    padding: 1%;
-    margin-top: 0;
-}
-.footer-links a{
-    margin-right: 2%;
+    justify-content: flex-end; 
+    padding: 0; 
 }
 
+.footer-links a {
+    margin-right: 10px; 
+}
 
 .logo-size {
-    height:30px;
+    height: 30px;
     width: 30px;
-}
+}   
+
 /*-----------------------------------------------------END OF FOOTER--------------------------------------------------------*/
 
 
@@ -820,13 +816,13 @@ html, body {
     justify-content: center;
     padding: 2%;
     height: auto;
-    min-height: calc(100vh-100px);
+    
     box-sizing: border-box;
     overflow: auto;
 }
 
 .container {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -883,7 +879,7 @@ h1 {
 
 
 .form-group input[type="radio"]:checked + .option {
-    background-color: #007bff; 
+    background-color: #073d76; 
     color: #ffffff;
     border-color: #007bff;
 }
@@ -928,7 +924,7 @@ h1 {
     text-align: center;
 }
 .form-group .amount-options input[type="radio"]:checked + label {
-    background-color: #007bff; /* Blue background for selected option */
+    background-color: #007bff; 
     color: #ffffff;
 }
 .form-group .amount-options .other-amount {
@@ -962,7 +958,7 @@ h1 {
 
 .form-group .frequency-options input[type="radio"]:checked + label,
 .form-group .amount-options input[type="radio"]:checked + label {
-    background-color: #007bff; 
+    background-color: #073d76;
     color: #ffffff;
     border-color: #007bff;
 }
